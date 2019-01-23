@@ -83,7 +83,7 @@ kakaku_data = pd.DataFrame(
 
 import altair as alt
 
-alt.Chart(kakaku_data, height=500 ,width=700).configure_legend(labelLimit=0).mark_line().encode(
+alt.Chart(kakaku_data, height=500 ,width=700).configure(background='white').configure_legend(labelLimit=0).mark_line().encode(
         x="Date:T",
         y="Price:Q",
         color="Title:N"
